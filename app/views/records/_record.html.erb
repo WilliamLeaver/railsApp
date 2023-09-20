@@ -1,22 +1,25 @@
 <div id="<%= dom_id record %>">
-  <p>
-    <strong>Player 1:</strong>
-    <%= record.player_1 %>
-  </p>
 
-  <p>
-    <strong>Player 1 wins:</strong>
-    <%= record.player_1_wins %>
-  </p>
+<table class="table table-striped table-bordered table-hover">
+  <thead> 
+    <tr>
+      <th> Player 1 Name: </th>
+      <th> Player 1 Wins: </th>
+      <th> Player 2 Name: </th>
+      <th> Player 2 Wins: </th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td><%= record.player_1 %></td>
+      <td><%= record.player_1_wins %></td>
+      <td><%= record.player_2 %></td>
+      <td><%= record.player_2_wins %></td>
+    </tr>
+  </tbody>
+</table>
 
-  <p>
-    <strong>Player 2:</strong>
-    <%= record.player_2 %>
-  </p>
 
-  <p>
-    <strong>Player 2 wins:</strong>
-    <%= record.player_2_wins %>
-  </p>
-
+ 
 </div>
