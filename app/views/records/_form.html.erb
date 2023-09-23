@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :player_1, style: "display: block" %>
-    <%= form.text_field :player_1 %>
+    <%= form.text_field :player_1, class:"form-control", placeholder:"Player 1 Name" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :player_1_wins, style: "display: block" %>
-    <%= form.number_field :player_1_wins %>
+    <%= form.number_field :player_1_wins, class:"form-control", placeholder:"Wins" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :player_2, style: "display: block" %>
-    <%= form.text_field :player_2 %>
+    <%= form.text_field :player_2, class:"form-control", placeholder:"Player 2 Name" %>
   </div>
 
-  <div>
+  <div class="field form-group">
     <%= form.label :player_2_wins, style: "display: block" %>
-    <%= form.number_field :player_2_wins %>
+    <%= form.number_field :player_2_wins, class:"form-control", placeholder:"Wins" %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <button type="submit" class="btn btn-secondary mt-2">Create Record</button>
   </div>
 <% end %>
